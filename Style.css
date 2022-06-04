@@ -316,24 +316,27 @@
         text-align: center;
         background: rgb(255, 255, 255);
     }
+    .swiper-slide img{
+        width: 100%;
+    }
     .text-box{
-        width: 550px;
+        width: 500px;
         text-align: left;
         top: 20%;
-        left: 300px;
+        left: 100px;
         padding: 40px;
         position: absolute;
         color: white;
         visibility: visible;
     }
     .text-box h2{
-        font-size: 45px;
+        font-size: 40px;
         letter-spacing: 0.5px;
         line-height: 55px;
     }
     .text-box h4{
         padding: 10px 0;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 100;
     }
     .text-box hr{
@@ -345,11 +348,11 @@
     border: 1px solid white;
     background: none;
     color: white;
-    padding: 20px 40px;
+    padding: 15px 20px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
-    margin-right: 42px;
+    margin-right: 22px;
     margin-top: 20px;
     cursor: pointer;
     border-radius: 2.5px;
@@ -409,7 +412,8 @@
         left: 300px;
     }
     .row-1, .row-2{
-        width: 70%;
+        height: 400px;
+        max-width: 80%;
         display: inline-flex;
         text-align: center;
     }
@@ -560,7 +564,7 @@
         transform: translateX(0);
     }
     .blog-col{
-        width: 400px;
+        width: 350px;
         overflow: hidden;
         margin: 15px 15px;
         position: relative;
@@ -898,7 +902,7 @@
         transition: 0.4s;
     }
 
-    @media only screen and (max-width:900px){
+    @media only screen and (max-width:850px){
 /* top-menu-start */
         .top-nav {
             display: flex;
