@@ -1,0 +1,547 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.header{
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    background-color: rgb(32, 32, 32);
+}
+.top-nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 2%;
+}
+/* ------------------------------------------------------header-start------------------------------------------------- */
+
+.network-nav{
+flex: 1;
+text-align: right;
+}
+.network-nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 20px;
+    position: relative;
+}
+.logoEA{
+    height: 17px;
+    opacity: .5;
+}
+.logoEA:hover{
+    opacity: 1;
+}
+.network-nav ul li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 20px;
+}
+.network-nav ul li a:hover{
+    color: white;
+}
+.header-main{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.header .navigation-icon{
+    padding: 0 15px; 
+}
+.navigation-icon a svg{
+    transition: all 0.3s ease;
+}
+.navigation-icon:hover a svg{
+    fill: rgb(255, 0, 0);
+    transform: scale(1.5,1.5);
+}
+.header .logo{
+    padding: 0 15px;
+}
+.logo a img{
+    height: 30px;
+}
+.header .nav-menu{
+    padding: 0 15px;
+}
+.header .menu > .menu-item{
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 18px;
+    position: relative;
+}
+.close-icon{
+    display: none;
+}
+.header .menu > .menu-item a{
+    display: block;
+    padding: 20px 0;
+    font-weight: 100;
+}
+.menu-item a svg , .menu-item-2 a svg{
+    fill: rgb(68, 68, 68);
+} 
+.menu-item a svg{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    top: 2.5px;
+    position: relative;
+}
+.header .menu > .menu-item:hover > a {
+    color: red;
+}
+.header .menu > .menu-item:hover > a svg{
+    fill: red;
+    transform: rotateX(180deg);
+}
+.header .menu > .menu-item > .menu-sub{
+    width: 400px;
+    position: absolute;
+    left: 0;
+    top: 75px;
+    background-color: white;
+    opacity: .9;
+    border-radius: 5px;
+    padding: 40px 25px;
+    transform: translateY(10px);
+    transition: all 0.2s ease;
+    visibility: hidden;
+}
+.header .menu > .menu-item:hover > .menu-sub{
+    transform: translateY(0);
+    visibility: visible;
+}
+.header .menu > .menu-item > .menu-sub li{
+    display: block;
+}
+.header .menu > .menu-item > .menu-sub a{
+    padding: 10px 0;
+    font-weight: 100;
+    font-size: 16px;
+}
+.header .menu > .menu-item > .menu-sub-2{
+    width: 200px;
+    position: absolute;
+    left: 0;
+    top: 75px;
+    background-color: white;
+    opacity: .9;
+    border-radius: 5px;
+    padding: 20px 25px;
+    transform: translateY(10px);
+    transition: all 0.2s ease;
+    visibility: hidden;
+}
+.header{
+    position: fixed;
+}
+.header .menu > .menu-item:hover > .menu-sub-2{
+    transform: translateY(0);
+    visibility: visible;
+}
+.header .menu > .menu-item > .menu-sub-2 a{
+    padding: 10px 0;
+    font-weight: 100;
+    font-size: 16px;
+}
+hr{
+    width: 77%;
+}
+.menu-col-1 ul li:hover > a{
+    color: red;
+}
+.menu-col-2 ul li:hover > a{
+    color: red;
+}
+.menu-col-1,
+.menu-col-2 {
+    float: left;
+}
+.menu-col-1{
+    width: 50%;
+}
+/* ------------------------------------------------------header-end------------------------------------------------- */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  margin: 0 auto;
+  width: 50%;
+  position: relative;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%,-50%);
+  background-color: #000;
+  background-clip: padding-box;
+  border-radius: 5px;
+  outline: 0;
+}
+.modal-body {
+  padding: 30px;
+  
+}
+.modal-footer {
+  display: flex;
+  border-top: 1px solid #515151;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-top: 30px;
+  margin-top: 30px;
+}
+.modal-footer>:not(:first-child) {
+  margin-left: .25rem;
+}
+
+.btn {
+  cursor: pointer;
+  outline: none;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: all .3s ease-in-out;
+  margin-right: 20px;
+}
+
+.btn-secondary {
+  color: white;
+  background: none;
+  border-color: white;
+}
+.btn-secondary:hover{
+  background: white;
+  color: #000;
+  transform: scale(1.1,1.1);
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: red;
+  border: none;
+  transition: all .3s ease-in-out;
+}
+.btn-primary:hover{
+  transform: scale(1.1,1.1);
+}
+
+.modal-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #515151;
+  padding: 30px;
+  color: white;
+}
+
+h5.modal-title {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.close {
+  color: #aaaaaa;
+  font-size: 28px;
+  font-weight: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#cart {
+  font-size: 15px;
+  color: white;
+  background: red;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  outline: none;
+  margin-left: 1rem;
+  padding: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#cart:hover {
+  background: none;
+  border:1px solid white;
+}
+
+/* wrapper */
+.wrapper {
+  padding: 2rem;
+}
+
+.products ul {
+  display: inline-block;
+  margin-top: 150px;
+
+}
+
+.products ul .main-product {
+  transform: translateX(50%);
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    display: block;
+    float: left;
+    width: 24%;
+    border: 1px solid gray;
+    height: 600px;
+    transition: 0.3s ease;
+    cursor: pointer;
+
+}
+.products ul .main-product:hover{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.products ul .no-margin {
+  margin-right: 2rem;
+}
+
+.products ul .img-product img {
+  width: 100%;
+}
+
+.content-product .content-product-h3 {
+    padding: 0 20px;
+    overflow: hidden;
+    padding-top: 10px;
+    color: #222;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: left;
+    line-height: 1.5;
+    margin: 5px 0;
+    text-transform: uppercase;
+}
+
+.content-product .content-product-deltals {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.main-product .content-product .content-product-deltals .price {
+    color: #000000;
+    font-weight: 500;
+    font-size: 24px;
+    padding: 0 10px;
+    margin-left: 20px;
+    border-left: 3px solid red;
+
+}
+
+.content-product .content-product-deltals .price .money {
+  vertical-align: middle;
+}
+
+.content-product .content-product-deltals .btn-cart {
+  align-items: center;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: flex-end;
+  border: none;
+  background-color: red;
+  margin: 10px 0;
+  color: white;
+  margin-right: 20px;
+  transition: 0.3s ease;
+  transform: translateX(-2%);
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.content-product .content-product-deltals .btn-cart:hover {
+  background: #000000;
+}
+
+/* cart */
+.cart-header {
+  font-weight: 700;
+  font-size: 1.25em;
+  color: white;
+  text-transform: uppercase;
+  border-bottom: 1px solid #515151;
+}
+
+.cart-column {
+  display: flex;
+  align-items: center;
+  
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.cart-row {
+  display: flex;
+}
+
+.cart-item {
+  width: 45%;
+}
+
+.cart-price {
+  width: 50%;
+  font-size: 20px;
+  color: white;
+}
+
+.cart-quantity {
+  width: 35%;
+}
+
+.cart-item-title {
+  color: white;
+  margin-left: .5em;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.cart-item-image {
+  width: 100px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.btn-danger {
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.btn-danger:hover {
+  background: none;
+  border: 1px solid white;
+  color: white;
+}
+
+.cart-quantity-input {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid white;
+  background: none;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 25px;
+}
+
+.cart-row:last-child {
+  border:none ;
+}
+
+.cart-row:last-child .cart-column {
+  border: none;
+}
+
+.cart-total {
+  text-align: end;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.cart-total-title {
+  font-weight: 500;
+  font-size: 30px;
+  color: white;
+  margin-right: 20px;
+}
+
+.cart-total-price {
+  color: white;
+  font-size: 20px;
+}
+/* ------------------------------------------------------main-end------------------------------------------------- */
+
+/* -----------------------------------------------------footer-start------------------------------------------------ */
+
+.container-footer{
+  width: 100%;
+  background-color: #000;
+  height: 300px;
+}
+.row-footer{
+  justify-content: center;
+  padding-top: 50px;
+  display: flex;
+  height: 200px;
+  margin-bottom: 50px;
+}
+.footer-col{
+  padding: 0 53px;
+  border-right: 1px solid rgb(204, 204, 204);
+}
+.footer-col-2{
+  padding: 0 53px;
+}
+.footer-col a,.footer-col-2 a{
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  text-transform: capitalize;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col a:hover,.footer-col-2 a:hover{
+  color: red;
+  transform: scale(1.1,1.1);
+}
+.footer-col ul li a, .footer-col-2 ul li a{
+  padding-top: 10px;
+  font-size: 17px;
+  text-transform: capitalize;
+  color: rgb(255, 255, 255);
+  font-weight: 200;
+  display: block;
+  transition: all 0.4s ease;
+}
+
+/* -----------------------------------------------------footer-end------------------------------------------------ */

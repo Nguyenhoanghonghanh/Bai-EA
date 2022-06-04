@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Art</title>
+    <link rel="stylesheet" href="./Style.css">
+    <script src="https://kit.fontawesome.com/cc2b80c49d.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+    <div class="scroll-to-top" id="scroll-top">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M374.6 246.6C368.4 252.9 360.2 256 352 256s-16.38-3.125-22.62-9.375L224 141.3V448c0 17.69-14.33 31.1-31.1 31.1S160 465.7 160 448V141.3L54.63 246.6c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160C387.1 213.9 387.1 234.1 374.6 246.6z"/></svg>
+        </a>
+    </div>
+    <div class="main-page">
+        <section class="header">
+            <div class="container">
+                <div class="top-nav">
+                    <div class="dropdown">
+                        <div class="default-option">
+                            <p class="option">All categories</p>
+                        </div>
+                        <div class="dropdown-list">
+                            <ul>
+                                <li>All categories</li>
+                                <li>Games</li>
+                                <li>Platforms</li>
+                                <li>New events</li>
+                                <li>Help</li>
+                            </ul>
+                        </div>
+                            <div class="search">
+                                <input type="text" class="search-input" placeholder="Search games, news, etc">
+                            </div>
+                            <button class="btn-submit" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <header class="network-nav">
+                        <ul class="network-nav-menu">
+                            <li>
+                                <a href="./Login.html">
+                                    <i class="fa-solid fa-user-astronaut"></i>
+                                </a>
+                            </li>
+                            <li id="cart" class="network-item">
+                                <a href="">
+                                    <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                    Cart
+                                </a>
+                            </li>
+                            <li class="network-logo">
+                                <a href="./index.html">
+                                    <img src="./IMG/Logo-EA.png" alt="EA Logo" class="logoEA">
+                                </a>
+                            </li>
+                        </ul>
+                    </header>
+                </div>
+                <div class="header-main">
+                    <div class="hamburger">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                    <div class="navigation-icon">
+                    </div>
+                    <div class="logo">
+                        <a href="#">
+                            <img src="./IMG/Electronic-Arts-logo.png" alt="Electronic Arts Home">
+                        </a>
+                    </div>
+                    <nav class="nav-menu">
+                        <ul class="menu">
+                            <li class="menu-item">
+                                <a href="#">Games
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"/></svg>
+                                </a>
+                                <div class="menu-sub">
+                                    <div class="menu-col-1">
+                                        <h3 class="menu-browse">Browse Games<hr></h3>
+                                        <ul>
+                                            <li><a href="./game.html">Apex Legend</a></li>
+                                            <li><a href="#">The Sim 4</a></li>
+                                            <li><a href="#">Battlefield</a></li>
+                                            <li><a href="#">FIFA 22</a></li>
+                                            <li><a href="#">It Take Two</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="menu-col-1">
+                                        <h3 class="menu-browse">Platforms<hr></h3>
+                                        <ul>
+                                            <li><a href="#">PC</a></li>
+                                            <li><a href="#">PlayStation 5</a></li>
+                                            <li><a href="#">Xbox Series X</a></li>
+                                            <li><a href="#">Mobile</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">EA Products
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"/></svg>
+                                </a>
+                                <div class="menu-sub-2">
+                                    <div class="menu-col-2">
+                                        <ul>
+                                            <li><a href="./product.html">Products</a></li>
+                                            <li><a href="#">EA Free-to-Play</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">About</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Support</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>   
+        </section>
+        <!-- navigation menu end -->
+        <!-- main-page -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <img src="./IMG/Apex_slide_1.jpg">
+                  <div class="text-box">
+                    <h2>APEX LEGENDS™ MOBILE PRIME TIME PATCH NOTES</h2>
+                    <h4>The next evolution of mobile Battle Royale is here!</h4>
+                    <hr>
+                    <a href="./Login.html"><button class="btn" type="button">Play Now</button></a>
+                    <a href="https://www.youtube.com/watch?v=cheYIVEtVQ4&t=3s"><button class="btn" type="button">Watch The Trailer</button></a>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="trailer">
+                    <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+                        <source src="./Mp4/Sequence 01.mp4" type="video/ogg"></source>
+                    </video> 
+                  </div>
+                  <div class="text-box">
+                    <h2>APEX LEGENDS - LET NO ONE FALL</h2>
+                    <h4>For PlayStation® 4, PlayStation 5, Xbox One, Xbox Series X|S, Nintendo Switch, and PC via Origin and Steam.</h4>
+                    <hr>
+                    <button class="btn-2" type="button">Play Now</button>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <img src="./IMG/Apex_slide_2.jpg">
+                  <div class="text-box">
+                    <h2>THE SIM 4 - PLAY WITH LIFE</h2>
+                    <h4>The Sims 4 is the life simulation game that gives you the power to create and control people. Experience the creativity, humor, escape, and the freedom to play with life in The Sims 4. Try the Create A Sim demo to create your own Sim!</h4>
+                    <hr>
+                    <button class="btn" type="button">Play Now</button>
+                    <button class="btn" type="button">Watch The Trailer</button>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="trailer">
+                    <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+                        <source src="./Mp4/Sequence 02.mp4" type="video/ogg"></source>
+                    </video>
+                  </div>
+                 
+                  <div class="text-box">
+                    <h2>BATTLEFIELD</h2>
+                    <h4>The next generation of all-out war is here – play Battlefield 2042 today. Adapt and overcome dynamically-changing battlegrounds with the help of your squad and a cutting-edge arsenal.</h4>
+                    <hr>
+                    <button class="btn-2" type="button">Buy Now</button>
+                  </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- Featured Games -->
+        <section class="feature-games">
+            <h1>Featured Games</h1>
+            <div class="row-1">
+                <div class="game-col">
+                    <div class="game-1">
+                        <img src="./IMG/battlefield-2042-key-art.jpg.adapt.crop1x1.767p.jpg">
+                        <div class="logo-game">
+                            <img src="./IMG/bf-2042-adaptive-hero-logo-7x2-xl.png.adapt.crop7x2.1920w.png">
+                            <h6>Official Site</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-col">
+                    <div class="game-1">
+                        <img src="./IMG/fifa22-key-art.jpg.adapt.crop1x1.767p (1).jpg">
+                        <div class="logo-game">
+                            <img src="./IMG/Fifa_2022-01.png">
+                            <h6>Official Site</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-col">
+                    <div class="game-1">
+                        <img src="./IMG/madden-nfl-22-keyart.jpg.adapt.crop1x1.767p.jpg">
+                        <div class="logo-game">
+                            <img src="./IMG/Maiden-01.png">
+                            <h6>Official Site</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-2">
+                <div class="game-col">
+                    <div class="game-1">
+                        <img src="./IMG/it-takes-two-keyart.jpg.adapt.crop1x1.767p.jpg">
+                        <div class="logo-game">
+                            <img src="./IMG/it-takes-two-logo-mono.png">
+                            <h6>Official Site</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-col">
+                    <div class="game-1">
+                        <img src="./IMG/apex-legends-keyart.jpg.adapt.crop1x1.767p.jpg">
+                        <div class="logo-game">
+                            <img src="./IMG/Apex-01.png">
+                            <h6>Official Site</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-col">
+                    <div class="game-1">
+                        <img src="./IMG/the-sims-4-keyart.jpg.adapt.crop1x1.767p.jpg">
+                        <div class="logo-game">
+                            <img src="./IMG/the-sims-4-mono-logo.png">
+                            <h6>Official Site</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-games">
+                <button type="button">Lastest Games</button>
+            </div>
+        </section>
+        
+        <!-- News-content -->
+        <section>
+            <div class="row-news">
+                <div class="col-news">
+                    <div class="tittle-1">
+                        <h1>Latest Update</h1>
+                    </div>
+                    <div class="News">
+                        <div class="nav-news">
+                                <button id="btn1" onclick="openContent1()">EA News</button>
+                                <button id="btn2"onclick="openContent2()">EA Play</button>
+                                <button id="btn3"onclick="openContent3()">Apex Legends</button>
+                        </div>
+                        <hr>
+                        <div id="content-1" class="content-row">
+                            <div  class="blog-col">
+                                <img src="https://media.contentapi.ea.com/content/dam/ea/madden-nfl/madden-nfl-23/news/images/2022/05/m23-ame-featured-image.png.adapt.crop16x9.431p.png">
+                                <div class="blog-content">
+                                    <h6><span>Electronic Arts Inc.</span>&ensp;Mar 8, 2022</h6>
+                                    <h3>John Madden Returns To The Cover of EA SPORTS</h3>
+                                    <p> Electronic Arts Celebrates #MaddenDay with Field Dedication Ceremony and More</p>
+                                </div>
+                            </div>
+                            <div  class="blog-col">
+                                <img src="https://media.contentapi.ea.com/content/dam/eacom/SIMS/common/sims4-options-layer-customizable-pronouns.png.adapt.crop16x9.431p.png">
+                                <div class="blog-content">
+                                    <h6><span>Electronic Arts Inc.</span>&ensp;Mar 8, 2022</h6>
+                                    <h3>Customizable Now Available In The Sims 4</h3>
+                                    <p>Launching in English First, Here’s How to Customize Pronouns for Sims in Create a Sim</p>
+                                </div>
+                            </div>
+                            <div  class="blog-col">
+                                <img src="https://media.contentapi.ea.com/content/dam/eacom/common/ea-media-fc-16x9.jpg.adapt.crop16x9.431p.jpg">
+                                <div class="blog-content">
+                                    <h6><span>Electronic Arts Inc.</span>&ensp;Mar 8, 2022</h6>
+                                    <h3>EA SPORTS FC™ is the Future of Football</h3>
+                                    <p>A New Era Begin in 2023 - After EA SPORTS Delivers Most Expansive FIFA Ever This Year</p>
+                                </div>
+                            </div>
+                            <div  class="blog-col">
+                                <img src="https://media.contentapi.ea.com/content/dam/eacom/images/2017/07/ea-header-fy18q1-earnings-xl.png.adapt.crop16x9.431p.png">
+                                <div class="blog-content">
+                                    <h6><span>Electronic Arts Inc.</span>&ensp;Mar 8, 2022</h6>
+                                    <h3>Electronic Arts Reports Q4 FY22 Financial Results</h3>
+                                    <p>Electronic Arts Inc. (NASDAQ:EA) today announced preliminary financial results...</p>
+                                </div>
+                            </div>
+                            <div  class="blog-col">
+                                <img src="https://media.contentapi.ea.com/content/dam/eacom/images/2021/03/ea-featured-tile-generic-electronic-arts.png.adapt.crop16x9.431p.png">
+                                <div class="blog-content">
+                                    <h6><span>Electronic Arts Inc.</span>&ensp;Mar 8, 2022</h6>
+                                    <h3>EA Esports Update on Russia and Belarus</h3>
+                                    <p>Electronic Arts Celebrates #MaddenDay with Field Dedication Ceremony and More</p>
+                                </div>
+                            </div>
+                            <div  class="blog-col">
+                                <img src="https://media.contentapi.ea.com/content/dam/eacom/en-us/images/2022/03/whm-featured-tile-whm-banner.jpg.adapt.crop16x9.431p.jpg">
+                                <div class="blog-content">
+                                    <h6><span>Electronic Arts Inc.</span>&ensp;Mar 8, 2022</h6>
+                                    <h3>Working Together to #BreaktheBias</h3>
+                                    <p>This year’s International Women’s Day theme explores how deliberate or unconscious...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="content-2" class="content-row">
+                            <div  class="blog-col">
+                                <img src="https://media.contentapi.ea.com/content/dam/ea/madden-nfl/madden-nfl-22/news/images/2022/02/eap-madden22-playlist-featured-img.jpg.adapt.crop16x9.431p.jpg">
+                                <div class="blog-content">
+                                    <h6><span>Electronic Arts Inc.</span>&ensp;Mar 8, 2022</h6>
+                                    <h3>Electronic Arts Reports Q4 FY22</h3>
+                                    <p>Electronic Arts Inc. (NASDAQ:EA) today announced preliminary financial results...</p>
+                                </div>
+                            </div>
+                            <div  class="blog-col">
+                                <img src="https://media.contentapi.ea.com/content/dam/news/ea-play-subscription/images/2020/12/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg">
+                                <div class="blog-content">
+                                    <h6><span>Electronic Arts Inc.</span>&ensp;Mar 8, 2022</h6>
+                                    <h3>Working Together to #BreaktheBias</h3>
+                                    <p>A New Era Begin in 2023 - After EA SPORTS Delivers Most Expansive FIFA Ever This Year</p>
+                                </div>
+                            </div>
+                            <div  class="blog-col">
+                                <img src="https://media.contentapi.ea.com/content/dam/ea/fifa/fifa-21/news/common/eaplay-socialpost-spotlight-fifa21-16x9.png.adapt.crop16x9.431p.png">
+                                <div class="blog-content">
+                                    <h6><span>Electronic Arts Inc.</span>&ensp;Mar 8, 2022</h6>
+                                    <h3>Working Together to #BreaktheBias</h3>
+                                    <p>A New Era Begin in 2023 - After EA SPORTS Delivers Most Expansive FIFA Ever This Year</p>
+                                </div>
+                            </div>
+                            <div  class="blog-col">
+                                <img src="https://media.contentapi.ea.com/content/dam/news/ea-play-subscription/images/2020/12/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg">
+                                <div class="blog-content">
+                                    <h6><span>Electronic Arts Inc.</span>&ensp;Mar 8, 2022</h6>
+                                    <h3>Working Together to #BreaktheBias</h3>
+                                    <p>A New Era Begin in 2023 - After EA SPORTS Delivers Most Expansive FIFA Ever This Year</p>
+                                </div>
+                            </div>
+                            <div  class="blog-col">
+                                <img src="https://media.contentapi.ea.com/content/dam/news/ea-play-subscription/images/2021/03/ea-image-210316-game-pass-article-eaonlycore-16x9.jpg.adapt.crop16x9.431p.jpg">
+                                <div class="blog-content">
+                                    <h6><span>Electronic Arts Inc.</span>&ensp;Mar 8, 2022</h6>
+                                    <h3>Working Together to #BreaktheBias</h3>
+                                    <p>A New Era Begin in 2023 - After EA SPORTS Delivers Most Expansive FIFA Ever This Year</p>
+                                </div>
+                            </div>
+                            <div  class="blog-col">
+                                <img src="https://media.contentapi.ea.com/content/dam/news/ea-play-subscription/images/2020/12/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg">
+                                <div class="blog-content">
+                                    <h6><span>Electronic Arts Inc.</span>&ensp;Mar 8, 2022</h6>
+                                    <h3>Working Together to #BreaktheBias</h3>
+                                    <p>A New Era Begin in 2023 - After EA SPORTS Delivers Most Expansive FIFA Ever This Year</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="content-3" class="content-row">
+                            <div  class="blog-col">
+                                <img src="https://media.contentapi.ea.com/content/dam/eacom/inbox/apex-s5drop8-social-twitch-1920x1080-20220504182502857.jpg.adapt.crop16x9.431p.jpg">
+                                <div class="blog-content">
+                                    <h6><span>Electronic Arts Inc.</span>&ensp;Mar 8, 2022</h6>
+                                    <h3>Working Together to #BreaktheBias</h3>
+                                    <p>A New Era Begin in 2023 - After EA SPORTS Delivers Most Expansive FIFA Ever This Year</p>
+                                </div>
+                            </div>
+                            <div  class="blog-col">
+                                <img src="https://media.contentapi.ea.com/content/dam/apex-legends/images/2022/05/spear-newsletter-header.png.adapt.crop16x9.431p.png">
+                                <div class="blog-content">
+                                    <h6><span>Electronic Arts Inc.</span>&ensp;Mar 8, 2022</h6>
+                                    <h3>Working Together to #BreaktheBias</h3>
+                                    <p>A New Era Begin in 2023 - After EA SPORTS Delivers Most Expansive FIFA Ever This Year</p>
+                                </div>
+                            </div>
+                            <div  class="blog-col">
+                                <img src="https://media.contentapi.ea.com/content/dam/eacom/common/ea-media-fc-16x9.jpg.adapt.crop16x9.431p.jpg">
+                                <div class="blog-content">
+                                    <h6><span>Electronic Arts Inc.</span>&ensp;Mar 8, 2022</h6>
+                                    <h3>Working Together to #BreaktheBias</h3>
+                                    <p>A New Era Begin in 2023 - After EA SPORTS Delivers Most Expansive FIFA Ever This Year</p>
+                                </div>
+                            </div>
+                            <div  class="blog-col">
+                                <img src="https://media.contentapi.ea.com/content/dam/apex-legends/images/2022/05/apex-media-news-saviors-patch-keyart.jpg.adapt.crop16x9.431p.jpg">
+                                <div class="blog-content">
+                                    <h6><span>Electronic Arts Inc.</span>&ensp;Mar 8, 2022</h6>
+                                    <h3>Working Together to #BreaktheBias</h3>
+                                    <p>A New Era Begin in 2023 - After EA SPORTS Delivers Most Expansive FIFA Ever This Year</p>
+                                </div>
+                            </div>
+                            <div  class="blog-col">
+                                <img src="https://media.contentapi.ea.com/content/dam/apex-legends/images/2022/05/apex-legends-screenshots-s13-action-newcastleandbangalore-dropship-clean.jpg.adapt.crop16x9.431p.jpg">
+                                <div class="blog-content">
+                                    <h6><span>Electronic Arts Inc.</span>&ensp;Mar 8, 2022</h6>
+                                    <h3>Working Together to #BreaktheBias</h3>
+                                    <p>A New Era Begin in 2023 - After EA SPORTS Delivers Most Expansive FIFA Ever This Year</p>
+                                </div>
+                            </div>
+                            <div  class="blog-col">
+                                <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/articles/season-12-weekly-community-features/nicewigg.png.adapt.crop16x9.431p.png">
+                                <div class="blog-content">
+                                    <h6><span>Electronic Arts Inc.</span>&ensp;Mar 8, 2022</h6>
+                                    <h3>Working Together to #BreaktheBias</h3>
+                                    <p>A New Era Begin in 2023 - After EA SPORTS Delivers Most Expansive FIFA Ever This Year</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- Join now -->
+        <section class="EA-play">
+            <div class="join-box">
+                <img src="./IMG/ea-play-logo-coral-hero-logo-small-01.png">
+                    <p>Don’t just get the game. Get more from your game. <br>Unlock exclusive rewards, members-only content, and a library of top titles.<br></p>
+                    <button class="btn-ea" type="button">Join Now</button>
+            </div>
+        </section>
+
+        <!-- Log-in -->
+        <div class="login-group">
+            <div class="user">
+                <div class="login">
+                    <h2>STAY <span>UP TO DATE</span> WITH
+                        <br><span>GAMES & EA</span> EMAILS</h2>
+                    <p>Sign up today to receive the latest news, updates,
+                        <br>behind-the-scenes content, exclusive offers,
+                        <br>and more (including other EA news, products,
+                        <br>events, and promotions) by email.
+                    </p>
+                    <hr>
+                </div>
+                <div class="login">
+                    <!-- <h1 class="tittle">Sign in to your EA Account</h1> -->
+                    <form class="loginForm" id="form" action="#">
+                        <div class="inputBox">
+                            <input type="text" name="" id="email"
+                            placeholder="Enter Email Address" onkeydown="validation()">
+                            <span id="text"></span>
+                            <input type="password" name="" id="password"
+                            placeholder="Enter Password">
+                        </div>
+                    </form>
+                    <!-- checkbox start -->
+                    <div class="wrapper">
+                        <input type="checkbox" id="check">
+                        <label for="check">Remember Me</label>
+                    </div>
+                    <!-- checkbox enđ -->
+                    <button class="login-btn" id="logInBtn" type="button">Log In</button>
+                    <div class="more" id="more">
+                        <a href="#">Need help logging in?</a>
+                    </div>
+                    <button class="create" id="CreateA" type="button">New to EA? Create an EA Account</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social media -->
+        <div class="Social-media">
+            <div class="social-group">
+                <div class="logo-brand-EA">
+                    <a href="#"><img src="./IMG/white-Electronic-Arts-logo.png"></a>
+                </div>
+                <div class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+                </div>
+            </div>
+        </div>
+        
+        <!-- footer -->
+        
+        <footer class="footer">
+            <div class="container-footer">
+                <div class="row-footer">
+                    <div class="footer-col">
+                        <a href="#">About Electronic Art</a>
+                        <ul>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Corporate Social <br>Responsibility<br></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <a href="#">Shop</a>
+                        <ul>
+                            <li><a href="#">Latest Games</a></li>
+                            <li><a href="#">Coming Soon</a></li>
+                            <li><a href="#">EA Sport</a></li>
+                            <li><a href="#">Free To Play</a></li>
+                            <li><a href="#">Games Library</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <a href="#">Support</a>
+                        <ul>
+                            <li><a href="#">EA Account</a></li>
+                            <li><a href="#">Other systems</a></li>
+                            <li><a href="#">Repairs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <a href="#">Privacy</a>
+                        <ul>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Cookies and interest-<br>based ads<br></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-2">
+                        <a href="#">Community</a>
+                        <ul>
+                            <li><a href="#">Community guidelines</a></li>
+                            <li><a href="#">Online safety principles</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

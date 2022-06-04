@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Login.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Log-in</title>
+</head>
+<body>
+    <div class="login-group">
+        <div class="user">
+            <div class="login">
+                <a href="./index.html"><img src="https://eaassets-a.akamaihd.net/resource_signin_ea_com/551.0.220527.275.8c0618c/p/statics/juno/img/EALogo-New.svg"></a>
+                <h2>Sign in to your EA Account</h2>
+                <div class="social-item">
+                    <img src="https://eaassets-a.akamaihd.net/resource_signin_ea_com/551.0.220527.275.8c0618c/p/images/google.svg">
+                    <img src="https://eaassets-a.akamaihd.net/resource_signin_ea_com/551.0.220527.275.8c0618c/p/images/facebook.svg">
+                    <img src="https://eaassets-a.akamaihd.net/resource_signin_ea_com/551.0.220527.275.8c0618c/p/images/steam.svg">
+                    <img src="https://eaassets-a.akamaihd.net/resource_signin_ea_com/551.0.220527.275.8c0618c/p/images/xbox.svg">
+                    <img src="https://eaassets-a.akamaihd.net/resource_signin_ea_com/551.0.220527.275.8c0618c/p/images/psn.svg">
+                </div>
+                <hr>
+            </div>
+            <div class="login">
+                <form class="loginForm" id="form" action="#">
+                    <div class="inputBox">
+                        <input type="text" name="" id="email"
+                        placeholder="Enter Email Address" onkeydown="validation()">
+                        <span id="text"></span>
+                        <input type="password" name="" id="password"
+                        placeholder="Enter Password">
+                    </div>
+                </form>
+                <!-- checkbox start -->
+                <div class="wrapper">
+                    <input type="checkbox" id="check">
+                    <label for="check">Remember Me</label>
+                </div>
+                <!-- checkbox enđ -->
+                <button class="login-btn" id="logInBtn" type="button">Log In</button>
+                <div class="more" id="more">
+                    <a href="#">Need help logging in?</a>
+                </div>
+                <button class="create" id="CreateA" type="button">New to EA? Create an EA Account</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
