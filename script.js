@@ -77,7 +77,7 @@ function validation(){
             btn3.style.color = "#000";
             btn3.style.background = "none";
             btn3.style.borderBottom = "none";
-            content1.style.transitionDelay = "0.3s";
+            content1.style.transitionDelay = "0.2s";
             content2.style.transitionDelay = "0s";
             content3.style.transitionDelay = "0s";
         }
@@ -95,7 +95,7 @@ function validation(){
             btn3.style.background = "none";
             btn3.style.borderBottom = "none";
             content1.style.transitionDelay = "0s";
-            content2.style.transitionDelay = "0.3s";
+            content2.style.transitionDelay = "0.2s";
             content3.style.transitionDelay = "0s";
         }
         function openContent3(){
@@ -113,7 +113,7 @@ function validation(){
             btn3.style.borderBottom = "thick solid #ff0000";
             content1.style.transitionDelay = "0s";
             content2.style.transitionDelay = "0s";
-            content3.style.transitionDelay = "0.3s";
+            content3.style.transitionDelay = "0.2s";
         }
 // ---------------------------------shopping-cart--------------------
     // Modal
